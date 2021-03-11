@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../edit/editUser.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./../dropzone.min.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="contain">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
+        <div
+          class="container-fluid d-flex justify-content-between custom-header"
+        >
+          <a class="navbar-brand custom-logo" href="./../create/profile.html">
+            <img src="https://atlacademy.az/assets/image/logo.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            style="margin-right: 10px !important"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse custom-buttons"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./../create/profile.html">Create</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./../edit/editUser.html">Edit</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./../view/viewUser.html">View</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="nav flex-column justify-content-start custom-side-bar">
+          <h3 style="width: 100%; text-align: center; padding-top: 30px">
+            List
+          </h3>
+          <ul class="list">
+            <li class="nav-item mb-5">
+              <a class="nav-link" href="#personal">Personal</a>
+            </li>
+            <li class="nav-item mb-5">
+              <a class="nav-link" href="#professional">Professional</a>
+            </li>
+            <li class="nav-item mb-5">
+              <a class="nav-link" href="#img">Image</a>
+            </li>
+            <li class="nav-item mb-5">
+              <a class="nav-link" href="#cv">CV</a>
+            </li>
+          </ul>
+        </div>
+        <div class="forms">
+          <form
+            action=""
+            id="form1"
+            onkeyup="control('form1')"
+            onchange="control('form1')"
+          >
+            <h3 id="personal">*Personal</h3>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Adiniz"
+                required
+              />
+              <label>Adiniz</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="lastname"
+                placeholder="Soyadiniz"
+                required
+              />
+              <label>Soyadiniz</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="date" class="form-control" id="inputDOB" required />
+              <label for="floatingInput">Ad gununuz</label>
+            </div>
+
+            <label for="gender" style="width: 100% !important;">
+              <h3>Cinsiniz :</h3>
+              <select
+              class="form-select form-select-lg mb-4"
+              
+              id="selectedGender"
+              required
+            >
+              <option value="Kisi">Kisi</option>
+              <option value="Qadin">Qadin</option>
+            </select>
+            </label>
+
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Address"
+                required
+              />
+              <label>Address</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="tel"
+                class="form-control"
+                id="inputPhone"
+                placeholder="Phone"
+                required
+              />
+              <label>Phone</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Email"
+                required
+              />
+              <label>Email</label>
+            </div>
+          </form>
+          <form
+            action=""
+            id="form2"
+            onkeyup="control2('form2')"
+            onchange="control2('form2')"
+          >
+            <h3 id="professional">*Professional</h3>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputOccupy"
+                placeholder="Occupation"
+                required
+              />
+              <label>Occupation</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputDegree"
+                placeholder="Degree"
+                required
+              />
+              <label>Degree</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputEmployer"
+                placeholder="Employer"
+                required
+              />
+              <label>Employer</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="number"
+                class="form-control"
+                id="inputYears"
+                placeholder="Years"
+                required
+              />
+              <label>Years</label>
+            </div>
+            <label class="dropzone" id="img">
+              <span id="img_text">Image</span>
+              <input type="file" class="drop" id="inputImage" />
+            </label>
+            <label class="dropzone" id="cv">
+              <span id="cv_text">CV</span>
+              <input type="file" class="drop" id="inputCV" />
+            </label>
+          </form>
+          <button id="submitForm" class="btn" disabled>Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./../edit/editUser.js"></script>
+</html>

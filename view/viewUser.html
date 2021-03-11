@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../view/viewUser.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./../dropzone.min.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="contain">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
+        <div
+          class="container-fluid d-flex justify-content-between custom-header"
+        >
+          <a class="navbar-brand custom-logo" href="./../create/profile.html">
+            <img src="https://atlacademy.az/assets/image/logo.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            style="margin-right:10px !important;"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse custom-buttons"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./../create/profile.html">Create</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./../edit/editUser.html">Edit</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="./../view/viewUser.html">View</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="nav flex-column justify-content-start custom-side-bar">
+          <h3 style="width: 100%; text-align: center; padding-top: 30px">
+            List
+          </h3>
+          <ul class="list">
+            <li class="nav-item mb-5">
+              <a class="nav-link" href="#personal">Personal</a>
+            </li>
+            <li class="nav-item mb-5">
+              <a class="nav-link" href="#professional">Professional</a>
+            </li>
+            <li class="nav-item mb-5">
+              <a class="nav-link" href="#img">Image</a>
+            </li>
+            <li class="nav-item mb-5">
+              <a class="nav-link" href="#cv">CV</a>
+            </li>
+          </ul>
+        </div>
+        <div class="forms ">
+          <ul class="list-group w-50 mb-4">
+            <li class="list-group-item active" aria-current="true">*Personal</li>
+            <li class="list-group-item">Name : <span id="name"></span></li>
+            <li class="list-group-item">Surname : <span id="surname"></span></li>
+            <li class="list-group-item">Date of birth : <span id="dob"></span></li>
+            <li class="list-group-item">Gender : <span id="gender"></span></li>
+            <li class="list-group-item">Email : <span id="email"></span></li>
+            <li class="list-group-item">Address : <span id="address"></span></li>
+            <li class="list-group-item">Phone : <span id="phone"></span></li>
+          </ul>
+          <ul class="list-group w-50 mt-4">
+            <li class="list-group-item active" aria-current="true">*Professional</li>
+            <li class="list-group-item">Occupation : <span id="occupy"></span></li>
+            <li class="list-group-item">Degree : <span id="degree"></span></li>
+            <li class="list-group-item">Employer : <span id="employer"></span></li>
+            <li class="list-group-item">Years : <span id="years"></span></li>
+          </ul>
+         <div class="image w-50 mt-5">
+           <a href="./../images/profile.png" target="_blank">Go to Image</a>
+         </div>
+         <div class="cv mt-5 w-50">
+          <a href="" id="pdf" target="_blank">Go to Pdf</a>
+         </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./../view/viewUser.js"></script>
+</html>
